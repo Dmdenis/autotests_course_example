@@ -9,14 +9,13 @@
 
 def multiplication_chain(num):
     # Здесь нужно написать код
-    z = 1
     count_multy = 0
     while num >= 10:
+        z = 1
         for a in str(num):
             z = z * int(a)
         count_multy += 1
         num = z
-        z = 1
     return count_multy
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ
