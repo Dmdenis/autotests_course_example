@@ -9,9 +9,8 @@ def flatten_and_sort(array):
     # Здесь нужно написать код
     result_list = []
     for first in array:
-        for second in first:
-            result_list.append(second)
-            result_list.sort()
+        result_list += first
+    result_list.sort()
     return result_list
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ
