@@ -11,7 +11,6 @@ def move_zeros(lst):
             lst2.append(a)
     for _ in range(x):
         lst2.append(0)
-        lst = lst2
     # Второй вариант
     # lst2 = []
     # lst3 = []
