@@ -21,18 +21,18 @@ def scrabble(word):
     :return points: целое число
     """
     points = 0
-    d1 = {1: 'авеёинорст',
-          2: 'дклмпу',
-          3: 'бгья',
-          4: 'йы',
-          5: 'жзхцч',
-          8: 'фшэю',
-          10: 'щ',
-          15: 'ъ'}
-    for j in word:
-        for k, v in d1.items():
-            if j in v:
-                points += k
+    dict_letters = {1: 'авеёинорст',
+                    2: 'дклмпу',
+                    3: 'бгья',
+                    4: 'йы',
+                    5: 'жзхцч',
+                    8: 'фшэю',
+                    10: 'щ',
+                    15: 'ъ'}
+    for letter in word:
+        for key, value in dict_letters.items():
+            if letter in value:
+                points += key
 
     return points
 

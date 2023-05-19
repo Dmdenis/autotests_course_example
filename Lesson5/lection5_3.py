@@ -30,8 +30,8 @@ def everything_for_your_cat(cats_data):
     our_str = ''
     for cat in cats_data:
         cats_dict.setdefault(' '.join(cat[2:]), []).append(', '.join(map(str, cat[:2])))
-    for k, v in cats_dict.items():
-        our_str += f'{k}: {"; ".join(v)}\n'
+    for key, value in cats_dict.items():
+        our_str += f'{key}: {"; ".join(value)}\n'
 
     return our_str
 
