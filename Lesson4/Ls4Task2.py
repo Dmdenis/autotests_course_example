@@ -11,6 +11,8 @@ def flatten_and_sort(array):
     for first in array:
         result_list += first
     result_list.sort()
+    x = [[3, 2, 1], [4, 6, 5], [], [9, 7, 8]]
+
     return result_list
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ

@@ -16,7 +16,7 @@
 def josephus_task(num_people, kill_num):
     lst = [f for f in range(1, num_people + 1)]
     while len(lst) != 1:
-        for z in range(0, kill_num - 1):
+        for z in range(kill_num - 1):
             lst.append(lst[z])
         del lst[0:kill_num]
     survivor = lst[0]

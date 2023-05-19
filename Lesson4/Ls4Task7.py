@@ -20,6 +20,7 @@ def move_zeros(lst):
     #     else:
     #         lst3.append(i)
     #     lst = lst2 + lst3
+    # lst = lst2 + lst3
     return lst2
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ
