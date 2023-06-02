@@ -25,7 +25,6 @@ def segment(dot1, dot2):
     try:
         return x1 + x2 + y1 + y2
     except Exception as e:
-        print(str(e)[::-1])
         return str(e)[::-1]
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ
